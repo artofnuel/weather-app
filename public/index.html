@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ArtofNuel | Weather App</title>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;600;900&display=swap');
+    </style>  
 </head>
-<body>
+<body class="w-screen h-full font-poppins bg-pexels bg-cover md:bg-cover bg-center bg-no-repeat">
+    <div class="flex flex-col space-y-6 justify-center items-center my-24 mx-auto">
+        <!-- input field -->
+        <div class="flex flex-col w-10/12 max-w-5xl">
+            <div class="flex flex-col justify-center items-center md:flex-row">
+                <input id="locate" class="w-full h-12 border-black p-4 rounded-l-md outline-none" type="text" placeholder="Search for a city">
+                <button id="btn" class=" h-12 group flex justify-center items-center border-r-4 border-slate-900 mt-2 p-4 px-12 rounded-r-md md:mt-0 md:bg-slate-900 hover:invert">
+                    <img class="w-7 invert" src="images/search.svg" alt="">
+                </button>
+            </div>
+            <h2 id="errorText" class="text-center text-white text-xl"></h2>
+        </div>
+
+        <div id="display" class="flex flex-col flex-wrap justify-center items-center w-10/12 md:max-w-4xl rounded-md transition-all md:flex-row">
+
+            <div id="addcity" class="group w-10/12 md:w-96 h-96 m-5 justify-evenly flex flex-col space-y-4 p-3 py-6 bg-white rounded-md text-center shadow-2xl ease-in-out duration-700 hover:scale-105 hover:text-white hover:bg-slate-600">
+                <h2 id="cityName" class="animate-bounce p-2 -mx-3 bg-slate-600 text-white group-hover:bg-white group-hover:text-slate-600 text-2xl font-semibold">Location</h2>
+                <h2 id="cityCondition" class="font-abril py-3 text-4xl text-slate-800 group-hover:text-white">Weather Condition</h2>
+                <h2 id="cityTemp" class="font-bold text-xl tracking-widest text-slate-800 group-hover:text-white">Temp: &#8451</h2>
+                <h2 id="minmaxTemp" class="font-bold text-xl tracking-widest text-slate-800 group-hover:text-white">Min/Max Temp: &#8451</h2>
+            </div>
+            
+        </div>
+    </div>
     <script src="js/weather.js"></script>
 </body>
 </html>

@@ -10,10 +10,14 @@ module.exports = {
       },
     extend: {
       backgroundImage: {
-        'twinkle': "url('../images/nnneon.svg')"
+        'search': "url('../images/search.svg')",
+        'search2': "url('../images/search2.svg')",
+        'pexels': "url('../images/pexels-bkg.jpg')",
+        'pexels2': "url('../images/pexels-bkg2.jpg')"
       },
       fontFamily: {
-        "lilita": 'Lilita One, cursive',
+        "poppins": 'Poppins, sans-serif',
+        "abril": 'Abril Fatface, cursive',
       },
       colors: {
         // primary
